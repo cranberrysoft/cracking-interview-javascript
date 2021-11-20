@@ -8,7 +8,7 @@ describe('Task1_1', () => {
 
         const unique = task11.isUnique("aa")
 
-        expect(unique).toBeFalse();
+        expect(unique).toBeFalsy()
     })
 
     it('should be unique when empty String', () => {
@@ -16,7 +16,7 @@ describe('Task1_1', () => {
 
         const unique = task11.isUnique("")
 
-        expect(unique).toBeTrue();
+        expect(unique).toBeTruthy()
     })
 
     it('should not be unique when many empty spaces', () => {
@@ -24,7 +24,7 @@ describe('Task1_1', () => {
 
         const unique = task11.isUnique("   ")
 
-        expect(unique).toBeFalse();
+        expect(unique).toBeFalsy();
     })
 
 
@@ -33,7 +33,7 @@ describe('Task1_1', () => {
 
         const unique = task11.isUnique("a")
 
-        expect(unique).toBeTrue();
+        expect(unique).toBeTruthy();
     })
 })
 
